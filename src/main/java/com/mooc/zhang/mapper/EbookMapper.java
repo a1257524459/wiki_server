@@ -2,9 +2,12 @@ package com.mooc.zhang.mapper;
 
 import com.mooc.zhang.domain.Ebook;
 import com.mooc.zhang.domain.EbookExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Service;
 
+import java.util.List;
+
+@Service
 public interface EbookMapper {
     long countByExample(EbookExample example);
 
