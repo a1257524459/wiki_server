@@ -40,7 +40,7 @@
                              targetPackage="com.mooc.zhang.mapper"
                              type="XMLMAPPER"/>
 
-<!--        <table tableName="zhang" domainObjectName="zhang"/>-->
+<!--domainObjectName可以起别名 <table tableName="zhang" domainObjectName="zhang"/>-->
         <table tableName="ebook"/>
         <!--<table tableName="ebook"/>-->
         <!--<table tableName="category"/>-->

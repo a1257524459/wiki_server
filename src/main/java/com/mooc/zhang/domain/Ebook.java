@@ -93,18 +93,20 @@ public class Ebook {
 
     @Override
     public String toString() {
-        return getClass().getSimpleName() +
-                " [" +
-                "Hash = " + hashCode() +
-                ", id=" + id +
-                ", name=" + name +
-                ", category1=" + category1 +
-                ", category2=" + category2 +
-                ", description=" + description +
-                ", cover=" + cover +
-                ", docCount=" + docCount +
-                ", viewCount=" + viewCount +
-                ", voteCount=" + voteCount +
-                "]";
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", id=").append(id);
+        sb.append(", name=").append(name);
+        sb.append(", category1=").append(category1);
+        sb.append(", category2=").append(category2);
+        sb.append(", description=").append(description);
+        sb.append(", cover=").append(cover);
+        sb.append(", docCount=").append(docCount);
+        sb.append(", viewCount=").append(viewCount);
+        sb.append(", voteCount=").append(voteCount);
+        sb.append("]");
+        return sb.toString();
     }
 }
