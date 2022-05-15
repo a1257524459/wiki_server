@@ -40,7 +40,8 @@
                              targetPackage="com.mooc.zhang.mapper"
                              type="XMLMAPPER"/>
 
-        <table tableName="zhang" domainObjectName="zhang"/>
+<!--        <table tableName="zhang" domainObjectName="zhang"/>-->
+        <table tableName="ebook"/>
         <!--<table tableName="ebook"/>-->
         <!--<table tableName="category"/>-->
         <!--<table tableName="doc"/>-->
