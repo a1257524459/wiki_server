@@ -39,9 +39,15 @@ public class EbookService {
         for (Ebook ebook : ebookList) {
             EbookResp ebookResp = new EbookResp();
             BeanUtils.copyProperties(ebook, ebookResp);
+            // 传统方式复制
             // ebookResp.setDescription("张佳浩");
             respList.add(ebookResp);
+//            用util工具复制一个没太搞懂，后面用到再说吧
+//            EbookResp resp = CopyUtil.copy(ebook, EbookResp.class);
+//            respList.add(resp);
         }
+//        用util工具复制整个列表确实简单
+//        return CopyUtil.copyList(ebookList, EbookResp.class);
 
         return respList;
     }
